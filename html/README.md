@@ -65,3 +65,23 @@ rel : Define un tipo de enlace, explicando cómo se relaciona el enlace con la p
 ```
 type : Define el tipo del recurso vinculado. ("text/css","text/html")
 ```
+
+### a
+
+Para enviar un email a ejemplo@dominio.com
+
+```
+<a href="mailto:ejemplo@dominio.com">Enlace a email</a>
+```
+
+Para llamar a 12345678
+
+```
+<a href="tel:e12345678">Enlace a Teléfono</a>
+```
+
+Para Enviar un wsp a 12345678
+
+```
+<a href="https://api.whatsapp.com/send?phone=56912345678&text=Hola">Enlace a WSP</a>
+```

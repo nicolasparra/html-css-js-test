@@ -14,10 +14,10 @@
             color: white;
         }
     </style>
-    <base href="https://github.com">
+    <!-- <base href="https://github.com"> -->
 </head>
 <body>
-    <h1>Nivel 1</h1>
+    <h1 id="inicio">Nivel 1</h1>
     <h2>Nivel 2</h2>
     <h3>Nivel 3</h3>
     <h4>Nivel 4</h4>
@@ -180,6 +180,8 @@
     <a href="/nicolasparra" target="_self" rel="nofollow">Target self</a>
     <a href="/nicolasparra" target="_parent" rel="nofollow">Target parent</a>
     <a href="/nicolasparra" target="_top" rel="nofollow">Target top</a>
+    <br>
+    <a href="app.html#inicio">Enlace Interno</a>
     <!-- End Enlaces -->
     <hr>
     <!--Script -->
@@ -191,5 +193,20 @@
         <p> Es necesario JavaScript </p>
     </noscript>
     <!-- End Script -->
+    <hr>
+    <details open>
+        <summary>Read more</summary>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra nec nulla vitae mollis.</p>
+    </details>
+    <menu>
+        <command type="checklist" label="Check List">Check List</command>
+    </menu>
+    <hr>
+    <!-- Video Audio-->
+    <h3>Audio y Video</h3>
+    <audio src="./media/kenai.mp4" controls loop preload></audio>
+    <br>
+    <video src="./media/kenai.mp4" controls poster="./img/favicon.png"></video>
+    <!-- End Video Audio -->
 </body>
 </html>

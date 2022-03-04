@@ -206,7 +206,132 @@
     <h3>Audio y Video</h3>
     <audio src="./media/kenai.mp4" controls loop preload></audio>
     <br>
-    <video src="./media/kenai.mp4" controls poster="./img/favicon.png"></video>
+    <video src="./media/kenai.mp4" controls poster="./img/favicon.png" width="400px"></video>
     <!-- End Video Audio -->
+    <hr>
+    <!-- IFRAMES -->
+    <iframe src="https://cssreference.io" >
+        Fallback text for non-supported browsers
+    </iframe>
+    <iframe src="./media/emmet-cheat-sheet.pdf" >
+        Fallback text for non-supported browsers
+    </iframe>
+    <!-- END IFRAMES -->
+    <hr>
+    <!-- Etiquetas -->
+    <img src="./img/world-continent.png" width="320" height="160" orgwidth="320" orgheight="160" usemap="#world-continents">
+    <map name="world-continents">
+    <area target="_blank"  title="North America" href="https://en.wikipedia.org/wiki/North_America" shape="poly" coords="48,89,67,69,77,49,140,0,68,0,6,10,4,31,16,69">
+    <area target="_blank"  title="South America" href="https://en.wikipedia.org/wiki/South_America" shape="poly" coords="48,88,61,74,119,99,95,160,66,159">
+    <area target="_blank"  title="Europe" href="https://en.wikipedia.org/wiki/Europe" shape="poly" coords="124,49,145,46,158,50,187,43,198,6,146,1,115,21">
+    <area target="_blank"  title="Africa" href="https://en.wikipedia.org/wiki/Africa" shape="poly" coords="121,53,140,47,169,51,186,77,196,80,188,137,156,136,138,97,118,86">
+    <area target="_blank"  title="Asia" href="https://en.wikipedia.org/wiki/Asia" shape="poly" coords="166,50,184,77,201,74,215,91,258,108,263,87,283,74,297,8,192,3,191,29,187,46,170,42">
+    <area target="_blank"  title="Australia" href="https://en.wikipedia.org/wiki/Australia_(continent)" shape="poly" coords="257,107,263,85,314,89,316,137,294,151,249,132,248,114">
+    </map>
+    <p>embed: Defines a container for external application.
+    </p>
+    <embed src="https://www.youtube.com/embed/Z26BvHOD_sg" width="640" height="480">
+    <p>    
+        canvas:Defines an element where you can draw graphics.
+    </p>    
+    <canvas>
+        Fallback text for non-supported browsers
+    </canvas>
+    <p>
+        source: Defines a source for an audio, video, or picture element.
+    </p>
+    <picture>
+        <source
+         media="(min-width: 800px)"
+         srcset="/images/sunset-360.jpg 360w,
+                 /images/sunset-720.jpg 720w,
+                 /images/sunset-1440.jpg 1440w"
+         sizes="33.3vw">
+        <source
+         srcset="/images/sunset-720.jpg 2x,
+                 /images/sunset-360.jpg 1x">
+        <img src="/images/sunset.jpg" alt="Picture of a Ha Long Bay sunset">
+    </picture>
+    <p>
+        object : Defines a container for external resource.
+        param : Defines a parameter for an object element.
+    </p>
+    <object type="application/x-shockwave-flash" data="/assets/golf.swf" width="800" height="360">
+        <param name="movie" value="/assets/golf.swf">
+        <param name="wmode" value="transparent">
+        <p>You need to enable Flash to view this content.</p>
+    </object>
+    <!-- End Etiquetas -->
+    <hr>
+    <!-- Formularios -->
+    <form action="">
+        <fieldset>
+            <legend>Fieldset: Defines a group of controls within a form.</legend>
+            <label for="first_name">Tipo text</label>
+            <input type="text" name="first_name" placeholder="e.g. Alex"><br>
+            <input type="email" name="email" placeholder="2"><br>
+            <input type="file" multiple><br>
+            <input type="number" name="number" placeholder="e.g. Alex"><br>
+            <input type="tel" name="tel"><br>
+            <input type="password" name="password"><br>
+            <input type="color" ><br>
+            <label>
+                <input type="checkbox">
+                I accept the terms and conditions
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="newsletter" value="yes">
+                Yes
+            </label>
+            <label>
+                <input type="radio" name="newsletter" value="no">
+                No
+            </label>
+            <br>
+            <textarea name="" id="" cols="30" rows="10" placeholder="text area"></textarea><br>
+            <input type="date" name="submit" placeholder="e.g. Alex"><br>
+            <progress value="71" max="100">Alex</progress><br>
+            <progress value="16" max="100">Brandon</progress><br>
+            <progress value="40" max="100">Charlotte</progress><br>
+            <progress value="92" max="100">Sam</progress><br>
+            <meter min="0" low="16" value="71" high="92" max="100">Alex</meter><br>
+            <meter min="0" low="16" value="16" high="92" max="100">Brandon</meter><br>
+            <meter min="0" low="16" value="40" high="92" max="100">Charlotte</meter><br>
+            <meter min="0" low="16" value="92" high="92" max="100">Sam</meter><br>
+            <select name="country">
+                <optgroup label="South America">
+                    <option>Uruguay</option>
+                    <option>Brazil</option>
+                    <option>Argentina</option>
+                </optgroup>
+                <optgroup label="Europe">
+                    <option>Italy</option>
+                    <option>Germany</option>
+                    <option>England</option>
+                    <option>France</option>
+                    <option>Spain</option>
+                </optgroup>
+            </select><br><br>
+            <label>South American countries</label><br>
+            <input list="countries" placeholder="Type a country">
+            <datalist id="countries">
+            <option value="Argentina">
+            <option value="Bolivia">
+            <option value="Brazil">
+            <option value="Chile">
+            <option value="Colombia">
+            <option value="Ecuador">
+            <option value="Guyana">
+            <option value="Paraguay">
+            <option value="Peru">
+            <option value="Suriname">
+            <option value="Uruguay">
+            <option value="Venezuela">
+            </datalist><br><br>
+            <input type="submit" name="submit" placeholder="e.g. Alex">
+        </fieldset>
+    </form>
+    <!-- End Formularios -->
 </body>
 </html>
